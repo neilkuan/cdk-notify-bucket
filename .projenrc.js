@@ -34,7 +34,7 @@ const project = new AwsCdkConstructLibrary({
   compat: true,
   python: {
     distName: 'cdk-notify-bucket',
-    module: 'cdk_events_notify',
+    module: 'cdk_notify_bucket',
   },
   stability: 'experimental',
   defaultReleaseBranch: 'main',
