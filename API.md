@@ -4,7 +4,7 @@
 
 ### NotifyBucket <a name="cdk-notify-bucket.NotifyBucket"></a>
 
-#### Initializer <a name="cdk-notify-bucket.NotifyBucket.Initializer"></a>
+#### Initializers <a name="cdk-notify-bucket.NotifyBucket.Initializer"></a>
 
 ```typescript
 import { NotifyBucket } from 'cdk-notify-bucket'
