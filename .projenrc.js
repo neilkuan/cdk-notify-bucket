@@ -2,7 +2,7 @@ const { AwsCdkConstructLibrary, DependenciesUpgradeMechanism } = require('projen
 const project = new AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '1.121.0',
+  cdkVersion: '1.122.0',
   defaultReleaseBranch: 'main',
   name: 'cdk-notify-bucket',
   repositoryUrl: 'https://github.com/neilkuan/cdk-notify-bucket.git',
@@ -15,10 +15,9 @@ const project = new AwsCdkConstructLibrary({
     '@aws-cdk/aws-s3-notifications',
     '@aws-cdk/core',
   ],
-  minNodeVersion: '12.19.0',
   autoDetectBin: false,
   depsUpgrade: DependenciesUpgradeMechanism.githubWorkflow({
-    ignoreProjen: true,
+    ignoreProjen: false,
     workflowOptions: {
       labels: ['auto-approve'],
       secret: 'AUTOMATION_GITHUB_TOKEN',
