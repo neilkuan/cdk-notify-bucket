@@ -36,11 +36,19 @@ new NotifyBucket(scope: Construct, id: string, props: NotifyBucketProps)
 
 ##### `bucket`<sup>Required</sup> <a name="cdk-notify-bucket.NotifyBucket.property.bucket"></a>
 
+```typescript
+public readonly bucket: Bucket;
+```
+
 - *Type:* [`@aws-cdk/aws-s3.Bucket`](#@aws-cdk/aws-s3.Bucket)
 
 ---
 
 ##### `topic`<sup>Required</sup> <a name="cdk-notify-bucket.NotifyBucket.property.topic"></a>
+
+```typescript
+public readonly topic: Topic;
+```
 
 - *Type:* [`@aws-cdk/aws-sns.Topic`](#@aws-cdk/aws-sns.Topic)
 
@@ -60,6 +68,10 @@ const notifyBucketProps: NotifyBucketProps = { ... }
 ```
 
 ##### `email`<sup>Required</sup> <a name="cdk-notify-bucket.NotifyBucketProps.property.email"></a>
+
+```typescript
+public readonly email: string[];
+```
 
 - *Type:* `string`[]
 
