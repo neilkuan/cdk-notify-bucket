@@ -32,7 +32,7 @@ const project = new AwsCdkConstructLibrary({
     announce: false,
   },
   compat: true,
-  python: {
+  publishToPypi: {
     distName: 'cdk-notify-bucket',
     module: 'cdk_notify_bucket',
   },
