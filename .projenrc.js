@@ -1,8 +1,8 @@
-const { AwsCdkConstructLibrary } = require('projen');
-const project = new AwsCdkConstructLibrary({
+const { awscdk } = require('projen');
+const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Neil Kuan',
   authorAddress: 'guan840912@gmail.com',
-  cdkVersion: '1.125.0',
+  cdkVersion: '1.134.0',
   defaultReleaseBranch: 'main',
   name: 'cdk-notify-bucket',
   repositoryUrl: 'https://github.com/neilkuan/cdk-notify-bucket.git',
