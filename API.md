@@ -14,7 +14,7 @@ new NotifyBucket(scope: Construct, id: string, props: NotifyBucketProps)
 
 ##### `scope`<sup>Required</sup> <a name="cdk-notify-bucket.NotifyBucket.parameter.scope"></a>
 
-- *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
+- *Type:* [`constructs.Construct`](#constructs.Construct)
 
 ---
 
@@ -40,7 +40,7 @@ new NotifyBucket(scope: Construct, id: string, props: NotifyBucketProps)
 public readonly bucket: Bucket;
 ```
 
-- *Type:* [`@aws-cdk/aws-s3.Bucket`](#@aws-cdk/aws-s3.Bucket)
+- *Type:* [`aws-cdk-lib.aws_s3.Bucket`](#aws-cdk-lib.aws_s3.Bucket)
 
 ---
 
@@ -50,7 +50,7 @@ public readonly bucket: Bucket;
 public readonly topic: Topic;
 ```
 
-- *Type:* [`@aws-cdk/aws-sns.Topic`](#@aws-cdk/aws-sns.Topic)
+- *Type:* [`aws-cdk-lib.aws_sns.Topic`](#aws-cdk-lib.aws_sns.Topic)
 
 ---
 

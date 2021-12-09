@@ -1,17 +1,17 @@
-import * as s3 from '@aws-cdk/aws-s3';
-import * as s3n from '@aws-cdk/aws-s3-notifications';
-import * as sns from '@aws-cdk/aws-sns';
-import * as cdk from '@aws-cdk/core';
-
+import * as cdk from 'aws-cdk-lib';
+import * as s3 from 'aws-cdk-lib/aws-s3';
+import * as s3n from 'aws-cdk-lib/aws-s3-notifications';
+import * as sns from 'aws-cdk-lib/aws-sns';
+import { Construct } from 'constructs';
 
 export interface NotifyBucketProps {
   readonly email: string[];
 }
 
-export class NotifyBucket extends cdk.Construct {
+export class NotifyBucket extends Construct {
   readonly bucket: s3.Bucket;
   readonly topic: sns.Topic;
-  constructor(scope: cdk.Construct, id: string, props: NotifyBucketProps) {
+  constructor(scope: Construct, id: string, props: NotifyBucketProps) {
     super(scope, id);
 
     this.bucket = new s3.Bucket(this, 'BucketResource', {
